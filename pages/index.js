@@ -10,7 +10,7 @@ export default function Home() {
   const [response, setResponse] = useState("");
 
   const handleSubmit = async () => {
-    const apiUrl = "http://localhost:3002/api/chatbot?query=";
+    const apiUrl = "http://localhost:3000/api/chatbot?query=";
     const queryString = textInput.replace(/[^a-z0-9+]+/gi, "+");
     try {
       const { data } = await axios.get(apiUrl + queryString);
@@ -27,6 +27,7 @@ export default function Home() {
 
   return (
     <div className="app">
+      <Image src="/chatbot-img.png" alt="me" width="200" height="200" />
       <h1>Please ask me a question</h1>
       <p className="subheading">( and I'll try to give you an answer )</p>
       <input
