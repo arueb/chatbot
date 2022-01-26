@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <div className="app">
-      <Image src="/chatbot-img.png" alt="me" width="200" height="200" />
+      <Image src="/chatbot-img.png" alt="chatbot" width="200" height="200" />
       <h1>Please ask me a question</h1>
       <p className="subheading">( and I'll try to give you an answer )</p>
       <input
